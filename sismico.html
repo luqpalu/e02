@@ -5,6 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="style.css" />
         <title>DNOO37 | EVALUACIÓN Nº2</title>
+         <style type="text/css">
+      .may {
+        color: lightpink;
+      }
+
+      .men {
+        color: darkgray;
+      }
+    </style>
+
     </head>
     <body>
         <nav>
@@ -36,6 +46,8 @@
                 datos = await data.json();
                 datos.features.forEach((t, i) => {
                     if (t.properties.place.includes("Chile") && t.properties.mag > 4.0) {
+             const magnitud = t.properties.mag >= 5.0 ? "may" : "men";
+
                         seccion.innerHTML += `<article><div><h3>${t.properties.mag.toFixed(1)}</h3></div><div><p><a href="${t.properties.url}" target="_blank" rel="noopener noreferrer">${t.properties.place}</a> - ${registro(t.properties.time)}</p></div></article>`;
                     }
                 });
