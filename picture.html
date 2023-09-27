@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        <title>DNOO37 | EVALUACIÓN Nº2</title>
+    </head>
+    <body>
+        <nav>
+            <h1><a href="index.html">Paula Luque</a></h1>
+            <select onchange="location = this.value;">
+                <option value="index.html">INDEX</option>
+                <option value="integrantes.html">INTEGRANTES</option>
+                <option value="openweather.html">OPEN WEATHER</option>
+                <option value="picture.html" selected>PICTURE OF THE DAY</option>
+                <option value="sismico.html">SÍSMICO</option>
+            </select>
+        </nav>
+        <section style="min-height: 80vh">
+            <blockquote></blockquote>
+        </section>
+        <script>
+            document.querySelector("blockquote").innerHTML = "Reemplace este párrafo con una fecha que le resulte significativa, seguida de la explanation que se ofrece para la Picture of the Day, la cual debe colocar como background en este página. Cuide la legibilidad del texto sobre la imagen. Ejemplo para el párrafo de reemplazo: <em>September 11, 2001</em>: The party is still going on in spiral galaxy NGC 3310…"
+        </script>
+    </body>
+</html>
